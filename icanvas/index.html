@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class='canvas-container'>
+        <canvas id="canvas" class="canvas">u should update ur browser</canvas>
+        <canvas id="canvasDraft" class="canvas">u should update ur browser</canvas>
+        </div>
+        <div class="color-container">
+            <p>hex: <input data-jscolor="{}" value="#3399FF"></p>
+            <p>rgba: <input data-jscolor="{}" value="rgba(51,153,255,0.5)"></p>
+        </div>
+        <div class="btn-container">
+            <span class="btn btn-primary fa fa-square" id="drawing-rectangle">Rec</span>
+            <span class="btn btn-info fa fa-paint-brush" id="drawing-line">Line</span>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
+        <script type="text/javascript" src="./canvasCommon.js"></script>
+        <script type="text/javascript" src="./drawLine.js"></script>
+        <script type="text/javascript" src="./drawRect.js"></script>
+        <script type="text/javascript" src="./button.js"></script>
+        <script type="text/javascript" src="./colorPicker.js"></script>
+    </body>
+</html>
