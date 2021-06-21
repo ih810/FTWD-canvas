@@ -21,12 +21,12 @@ function resizeCanvas(){
     canvas.width = 2000;
     canvas.height = 900;
 }
-resizeCanvas();
-//canvas can only be resized through js or (inline??)
+//canvas can only be resized through js or (inline??), css effect the coord system
 function resizeCanvasDraft(){
     canvasDraft.width = 2000;
     canvasDraft.height = 900;
 }
+resizeCanvas();
 resizeCanvasDraft();
 //canvas can only be resized through js or (inline??)
 
