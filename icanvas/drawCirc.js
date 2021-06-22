@@ -6,6 +6,7 @@ class DrawingCircle extends PaintFunction{
     }
     onMouseDown(coord,event){
         this.ctxDraft.fillStyle = drawColor;
+        console.log(coord)
         this.origX = coord[0];
         this.origY = coord[1];
     }

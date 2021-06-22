@@ -8,4 +8,10 @@ $('#drawing-line').click(()=>{
 $('#drawing-circ').click(()=>{
     currentFunction = new DrawingCircle(ctx,ctxDraft);
 });
+$('#text').click(()=>{
+    currentFunction = new InsertText(ctx,ctxDraft);
+});
+$('#save').click(()=>{
+    currentFunction = new InsertText(ctx,ctxDraft);
+});
 currentFunction = new DrawingRectangle(ctx,ctxDraft);

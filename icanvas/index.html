@@ -19,16 +19,16 @@
         <canvas id="canvas" class="canvas">u should update ur browser</canvas>
         <canvas id="canvasDraft" class="canvas">u should update ur browser</canvas>
         </div>
-        <div class="color-container">
-            <p>hex: <input data-jscolor="{}" value="#3399FF"></p>
-            <p>rgba: <input data-jscolor="{}" value="rgba(51,153,255,0.5)"></p>
-        </div>
+        <img id="canvasImg" alt="save">
         <div class="btn-container">
-            <span class="btn btn-primary fa fa-square" id="drawing-rectangle">Rec</span>
-            <span class="btn btn-info fa fa-paint-brush" id="drawing-line">Line</span>
-            <span class="btn btn-info fa fa-paint-brush" id="drawing-circ">Circ</span>
+            <button class="btn btn-primary fa fa-square" id="drawing-rectangle">Rec</button>
+            <button class="btn btn-info fa fa-paint-brush" id="drawing-line">Line</button>
+            <button class="btn btn-primary fa fa-square" id="drawing-circ">Circ</button>
+            <button class="btn btn-info fa fa-paint-brush" id="text">Text</button>
+            <button class="btn btn-primary fa fa-square" id="save">Save</button>
         </div>
         
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
         <script type="text/javascript" src="./canvasCommon.js"></script>
@@ -37,5 +37,7 @@
         <script type="text/javascript" src="./drawCirc.js"></script>
         <script type="text/javascript" src="./button.js"></script>
         <script type="text/javascript" src="./colorPicker.js"></script>
+        <script type="text/javascript" src="./text.js"></script>
+        <script type="text/javascript" src="./save.js"></script>
     </body>
 </html>

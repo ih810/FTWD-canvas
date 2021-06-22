@@ -8,14 +8,19 @@ const ctx = canvas.getContext(`2d`);
 //used to obtain the rendering context and its drawing functions
 const ctxDraft = canvasDraft.getContext(`2d`);
 //set the rendering to 2d
-
+let restoreArray = [];
+let restoreIndex = -1;
 let drawColor = "#a3d4f2"
+
 
 let currentFunction;
 //set a currentFunction for later use in eventListner
 
 let dragging = false;
 //default dragging to false, when mouseDown, start to drag
+
+let fontFam = "Georgia, serif";
+let fontSize = "90px";
 
 function resizeCanvas(){
     canvas.width = 2000;
@@ -81,7 +86,6 @@ $(`#canvasDraft`).mouseenter(function(e){
     currentFunction.onMouseEnter([mouseX,mouseY],e);
 });
 //noone cares
-
 
 class PaintFunction{
     constructor(){}
